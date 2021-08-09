@@ -15,7 +15,7 @@ namespace Infra.Data.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<News>> findAllAsync()
+        public async Task<IEnumerable<News>> FindAllAsync()
         {
             return await _context.News.ToListAsync();
         }

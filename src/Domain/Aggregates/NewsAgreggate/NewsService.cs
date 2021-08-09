@@ -12,9 +12,9 @@ namespace Domain.Aggregates.NewsAgreggate
             _repository = repository;
         }
 
-        public async Task<IEnumerable<object>> findAllAsync()
+        public async Task<IEnumerable<object>> FindAllAsync()
         {
-            return await _repository.findAllAsync();
+            return await _repository.FindAllAsync();
         }
     }
 }

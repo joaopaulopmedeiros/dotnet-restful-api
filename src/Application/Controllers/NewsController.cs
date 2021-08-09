@@ -21,5 +21,12 @@ namespace Application.Controllers
             var result = await _facade.FindAllAsync();
             return Response(result);
         }
+
+        [HttpGet("globo")]
+        public async Task<IActionResult> GetFromGlobo()
+        {
+            var result = await _facade.ScrapAsync();
+            return Response(result);
+        }
     }
 }

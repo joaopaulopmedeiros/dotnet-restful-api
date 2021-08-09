@@ -5,6 +5,6 @@ namespace Domain.Aggregates.NewsAgreggate
 {
     public interface INewsRepository
     {
-        Task<IEnumerable<News>> findAllAsync();
+        Task<IEnumerable<News>> FindAllAsync();
     }
 }

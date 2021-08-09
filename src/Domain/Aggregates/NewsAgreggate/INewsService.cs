@@ -7,6 +7,6 @@ namespace Domain.Aggregates.NewsAgreggate
 {
     public interface INewsService
     {
-        Task<IEnumerable<object>> findAllAsync();
+        Task<IEnumerable<object>> FindAllAsync();
     }
 }

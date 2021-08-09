@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infra.Data", "src\Infra.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests.Unit", "test\Tests.Unit\Tests.Unit.csproj", "{5A3C21F8-33AB-444C-BFCD-9FDE04969995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.CrossCutting.Utils", "Infra.CrossCutting.Request\Infra.CrossCutting.Utils.csproj", "{334F8167-8D51-4AB5-9B81-F72D6E763521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5A3C21F8-33AB-444C-BFCD-9FDE04969995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A3C21F8-33AB-444C-BFCD-9FDE04969995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A3C21F8-33AB-444C-BFCD-9FDE04969995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334F8167-8D51-4AB5-9B81-F72D6E763521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334F8167-8D51-4AB5-9B81-F72D6E763521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334F8167-8D51-4AB5-9B81-F72D6E763521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334F8167-8D51-4AB5-9B81-F72D6E763521}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

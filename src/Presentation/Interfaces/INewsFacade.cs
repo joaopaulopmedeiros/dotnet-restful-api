@@ -6,5 +6,6 @@ namespace Presentation.Interfaces
     public interface INewsFacade
     {
         public Task<IResponse> FindAllAsync();
+        public Task<IResponse> ScrapAsync();
     }
 }
