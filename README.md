@@ -10,5 +10,5 @@ Restful web api desenvolvida em .NET Core. Este projeto serve de exemplo para es
 - Infra: realiza conexões com banco de dados (ajuda a trazer o baixo acoplamento entre código de regra de negócios e os detalhes de implementação para persistir os dados) 
 - Tests: testes automatizados;
 
-Documentação dinâmica da API
+## Documentação dinâmica da API
 <img src=".github/images/swagger.png"/>
