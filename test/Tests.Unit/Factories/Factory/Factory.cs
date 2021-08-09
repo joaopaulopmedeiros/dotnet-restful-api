@@ -81,7 +81,7 @@ namespace Tests.Factories
 
         public void SetExtraProperties(string factoryName)
         {
-            if(IsPreDefinedId)
+            if (IsPreDefinedId)
             {
                 Type.GetType(factoryName).GetProperty("id").SetValue(null, PreDefinedId);
             }
