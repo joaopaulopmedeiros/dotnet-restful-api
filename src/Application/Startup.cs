@@ -21,6 +21,7 @@ namespace Application
         {
             services.AddControllers();
             services.AddSwaggerCustomConfig(Configuration);
+            services.AddDatabaseContextForApplication(Configuration);
             services.AddServicesForApplication();
         }
 
