@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infra\Infra.CrossCutting.Ioc.csproj" />
+    <ProjectReference Include="..\Infra.CrossCutting.Ioc\Infra.CrossCutting.Ioc.csproj" />
     <ProjectReference Include="..\Presentation\Presentation.csproj" />
   </ItemGroup>
 
