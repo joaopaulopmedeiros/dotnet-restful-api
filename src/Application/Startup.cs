@@ -12,6 +12,7 @@ namespace Application
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            MappingInjector.AddMappingForApplication();
         }
 
         public IConfiguration Configuration { get; }

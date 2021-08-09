@@ -4,6 +4,7 @@ using Infra.Data.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using Presentation.Facades;
 using Presentation.Interfaces;
+using Presentation.Mapping;
 
 namespace Infra.CrossCutting.Ioc
 {
@@ -17,6 +18,5 @@ namespace Infra.CrossCutting.Ioc
             services.AddTransient<INewsRepository, NewsRepository>();
             return services;
         }
-
     }
 }

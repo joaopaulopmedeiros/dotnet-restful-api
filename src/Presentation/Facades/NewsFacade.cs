@@ -1,7 +1,10 @@
-﻿using Domain.Aggregates.NewsAgreggate;
+﻿using AutoMapper;
+using Domain;
+using Domain.Aggregates.NewsAgreggate;
 using Infra.CrossCutting.Utils;
 using Presentation.Commom.Messages;
 using Presentation.Interfaces;
+using Presentation.Views;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -24,8 +27,12 @@ namespace Presentation.Facades
         /// <returns></returns>
         public async Task<IResponse> FindAllAsync()
         {
+            var items = await _defaultService.FindAllAsync();
+            
             Response response = new Response();
-            response.Objects = await _defaultService.FindAllAsync();
+            
+            response.Objects = Mapper.Map<IEnumerable<NewsView>>(items);
+            
             return response;
         }
 
@@ -35,8 +42,12 @@ namespace Presentation.Facades
         /// <returns></returns>
         public async Task<IResponse> ScrapAsync()
         {
+            var items = await _scraperService.FindAllAsync();
+
             Response response = new Response();
-            response.Objects =  await _scraperService.FindAllAsync();
+
+            response.Objects = Mapper.Map<IEnumerable<NewsView>>(items);
+            
             return response;
         }
     }
