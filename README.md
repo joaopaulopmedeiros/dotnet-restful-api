@@ -1,7 +1,12 @@
 # .NET Core Restful API
 
-## Objetivo
-Restful web api desenvolvida em .NET Core. Este projeto serve de exemplo para estudo de design patterns e boas práticas em especial para devs júniores.
+## O que é o projeto?
+Restful web api desenvolvida em .NET Core 3.1 que mostra resources (neste caso foi usada notícia como entidade do domínio) a partir de diferente fontes de dados. Sendo estas:
+- um banco de dados relacional (sql server);
+- web page da Globo.
+
+## Objetivos
+- Auxiliar devs júniores no estudo de design patterns e boas práticas.
 
 ## Arquitetura
 - Application: interceptação de requests e devolução de resposta http;
@@ -10,5 +15,13 @@ Restful web api desenvolvida em .NET Core. Este projeto serve de exemplo para es
 - Infra: realiza conexões com banco de dados (ajuda a trazer o baixo acoplamento entre código de regra de negócios e os detalhes de implementação para persistir os dados) 
 - Tests: testes automatizados;
 
-## Documentação dinâmica da API
+## Como instalar?
+- Clone o repositório com `git clone <repo_link>`;
+- Estabeleça uma conexão local do SQL Server conforme tutorial da [Microsoft](https://docs.microsoft.com/pt-br/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15);
+- Digite o comando `dotnet watch run`;
+
+Obs: todos os passos acima pressupõem que você tem a CLI do .NET Core instalada e o SQL Server em sua máquina.
+
+O resultado final deve ser:
+
 <img src=".github/images/swagger.png"/>
