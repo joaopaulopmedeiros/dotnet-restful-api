@@ -1,0 +1,14 @@
+version: '3'
+services: 
+  ms-sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "aNjk9@Bvt?VF^t88"
+      MYSSQL_PID: Express
+    ports:
+      - "1433:1433"
+  dotnet-restful-api:
+    build: .
+    ports: 
+      - "8080:80"

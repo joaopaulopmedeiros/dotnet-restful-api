@@ -33,6 +33,7 @@ namespace Application
             {
                 app.UseDeveloperExceptionPage();
                 app.UsePathBase("/api");
+                app.UseSwaggerCustomConfig(Configuration);
             }
 
             app.UseHttpsRedirection();
@@ -45,8 +46,6 @@ namespace Application
             {
                 endpoints.MapControllers();
             });
-
-            app.UseSwaggerCustomConfig(Configuration);
         }
     }
 }
