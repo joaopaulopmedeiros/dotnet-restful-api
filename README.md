@@ -1,9 +1,9 @@
 # .NET Core Restful API
 
 ## O que é o projeto?
-Restful web api desenvolvida em .NET Core 3.1 para fins de exibir notícias a partir de diferente fontes de dados. Sendo estas:
-- um banco de dados relacional (sql server);
-- web page da Globo.
+Restful web api desenvolvida em .NET Core 3.1 para fins de exibir notícias a partir de diferentes fontes de dados, sendo estas:
+- Um banco de dados relacional (Sql Server);
+- Web page da Globo.
 
 ## Objetivos
 - Auxiliar devs júniores no estudo de design patterns e boas práticas.
